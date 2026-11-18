@@ -7,7 +7,7 @@ a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
 h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--green);line-height:1.12;margin:0 0 12px;letter-spacing:-.01em}
 h1{font-size:clamp(38px,5.2vw,62px)}h2{font-size:clamp(30px,3.6vw,42px)}h3{font-size:21px}
 p{margin:0 0 14px}.lead{font-size:18.5px;color:#2E3B32;max-width:640px}
-.container{max-width:1180px;margin:0 auto;padding:0 20px}
+.container{max-width:1220px;margin:0 auto;padding:0 20px}
 .eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark);font-weight:700;margin-bottom:10px}
 .eyebrow.light{color:#F0C94A}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;line-height:1.25;border:2px solid transparent;cursor:pointer;text-decoration:none!important;flex-shrink:0;white-space:nowrap}
@@ -21,10 +21,10 @@ p{margin:0 0 14px}.lead{font-size:18.5px;color:#2E3B32;max-width:640px}
 .topbar{background:var(--green);color:#EAF0EA;font-size:13.5px}.topbar .container{display:flex;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}.topbar a{color:#fff;font-weight:600}.topbar span{opacity:.92}
 /* header */
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;flex-wrap:nowrap}
 .logo-link{display:flex;align-items:center;gap:12px;text-decoration:none!important}.logo-link img{height:58px;width:auto;display:block;border-radius:6px}
 .logo-text{line-height:1.1}.logo-text b{font-family:Fraunces,Georgia,serif;font-size:19px;color:var(--green);letter-spacing:.02em}.logo-text span{display:block;font-size:11px;letter-spacing:.14em;color:var(--muted);font-weight:700}
-nav.main{display:flex;gap:6px;align-items:center}nav.main a{padding:9px 12px;border-radius:999px;font-weight:600;font-size:14.5px;color:#24332A}nav.main a.active,nav.main a:hover{background:var(--green-light);color:var(--green);text-decoration:none}
+nav.main{display:flex;gap:4px;align-items:center;flex-wrap:nowrap}nav.main a{padding:8px 11px;border-radius:999px;font-weight:600;font-size:14px;color:#24332A;white-space:nowrap}nav.main a.active,nav.main a:hover{background:var(--green-light);color:var(--green);text-decoration:none}
 .hamburger{display:none;background:var(--green);color:#fff;border:0;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer}
 /* hero */
 .hero{background:linear-gradient(180deg,var(--cream) 0%,#fff 100%);padding:42px 0 36px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
@@ -53,13 +53,4 @@ footer{background:#0F2A1A;color:#DDE8DD;padding:44px 0 22px;margin-top:0}footer 
 
 @media(max-width:520px){.cta-row{flex-direction:column;align-items:stretch;gap:12px;margin-top:20px}.cta-row .btn{width:100%;padding:14px 18px;white-space:normal;text-align:center}.hero-cta{flex-direction:column;align-items:stretch;gap:10px}.hero-cta .btn{width:100%}}
 
-/* V3.3 — Longer menu label 'Products & Strategic Outsourcing' — keep header fitting */
-@media(max-width:1100px) and (min-width:901px){
-  nav.main a{padding:8px 10px;font-size:13.5px}
-  .header-inner{gap:10px;padding:12px 16px}
-  .logo-text b{font-size:17px}
-}
-/* Mobile menu: long label wraps cleanly, full-width row */
-@media(max-width:900px){
-  nav.main.open a{white-space:normal;line-height:1.35}
-}
+@media(max-width:900px){nav.main.open a{white-space:normal}}
