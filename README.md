@@ -59,9 +59,8 @@ Open `index.html` in a browser, or run `npx serve .` / `python3 -m http.server 8
 - Enquiry form now has CAS No. field (optional, included in email)
 
 
-## V3.4 — Menu looks odd fix (screenshot)
-- Problem: 'Products & Strategic Outsourcing' (31 chars) + 'Process & Services' made header ~1230px > 1180px container, so both wrapped to 2 lines and looked misaligned.
-- Fix 1 — Rename menu only: 'Products & Strategic Outsourcing' -> 'Products & Outsourcing' (22 chars, still says outsourcing), 'Process & Services' -> 'Process'. Nav + footer on all 6 pages. Page content / products page headings keep full meaning.
-- Fix 2 — CSS: nav links white-space:nowrap, gap 4px, padding 8px 11px, font 14px, header flex-wrap:nowrap, container 1180 -> 1220px, medium breakpoint 901-1150px tightens nav to 13px. Mobile dropdown still wraps vertically as it should.
-- Result: All 6 menu items + Share Requirement button on ONE line on desktop, no 2-line misalignment.
-- Still 17 files only, no _1/_2 duplicates. Still includes V3.1 cta-row mobile fix, GST 36AAICH1154P1Z8, CAS field, no mobile number.
+## V3.5 — Focus card odd fix + menu single-line re-applied
+- Focus card (About + Home): 'Sourcing • Trading • Supply' -> 'Sourcing, Trading, Supply'. The • bullet was orphaned on its own line ('• Supply'). Commas wrap cleanly, no orphan.
+- CSS: .fact-row flex + .fact equal-height, .fact b nowrap (Established/Based in/Focus labels stay on one line).
+- Menu re-applied: 'Products & Sourcing' -> 'Products & Outsourcing', 'Process & Services' -> 'Process' (nav + footer only). Products page H1/title still full 'Products & Strategic Outsourcing'. Menu nowrap + container 1220px so all menu items stay on one line.
+- Still 17 files only, no _1/_2 duplicates. Still includes V3.1 cta-row fix, GST 36AAICH1154P1Z8, CAS field, no mobile number.
