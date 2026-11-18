@@ -43,10 +43,17 @@ In Zoho Domains (https://domains.zoho.com):
 Verify: https://www.heliovedha.com and https://heliovedha.com both load. In Vercel, both should show “Valid Configuration”.
 
 ## Update content later
-- GST: currently `6AAICH1154P1Z8` exactly as in PPT — update in footer of all pages + contact.html when you have the final number.
+- GST: currently `336AAICH1154P1Z8` exactly as in PPT — update in footer of all pages + contact.html when you have the final number.
 - Products: add new cards in `products.html` by copying a `<div class="card" data-cat="...">` block. Add a new filter button if you add a new category.
 - Logo: if you get an SVG from your designer, replace `assets/logo.webp` references with `assets/logo.svg` (keep filename or update img src in all pages).
 - Email: form sends to sales@heliovedha.com via mailto — change in `script.js` if needed.
 
 ## Local preview
 Open `index.html` in a browser, or run `npx serve .` / `python3 -m http.server 8000` and visit http://localhost:8000
+
+
+## V3 Changes (latest from PPTX + Word doc)
+- GST corrected to 36AAICH1154P1Z8 (was 6AAICH1154P1Z8 — missing leading 3)
+- Products page renamed to Products & Strategic Outsourcing + 4 new cards: Product Sourcing, Outsourcing Solutions, Global Procurement, Supply Chain Support
+- Company mobile number removed from public site (header/footer/contact) per latest doc
+- Enquiry form now has CAS No. field (optional, included in email)

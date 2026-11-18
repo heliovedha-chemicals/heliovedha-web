@@ -2,7 +2,7 @@
 /* Heliovedha Chemicals — heliovedha.com — V2 */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
 :root{--green:#143522;--green2:#1B3A2A;--green-light:#E8EFE9;--gold:#D9A419;--gold-dark:#B9860F;--cream:#FAF6EC;--cream2:#F3EDDD;--ink:#1A231E;--muted:#5A6A5E;--line:#E6DDC8;--white:#fff;--radius:18px;--shadow:0 10px 30px rgba(20,53,34,.10);--shadow2:0 18px 50px rgba(20,53,34,.14)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.65;font-size:16px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.65;font-size:16px}
 a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
 h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--green);line-height:1.12;margin:0 0 12px;letter-spacing:-.01em}
 h1{font-size:clamp(38px,5.2vw,62px)}h2{font-size:clamp(30px,3.6vw,42px)}h3{font-size:21px}
@@ -10,7 +10,9 @@ p{margin:0 0 14px}.lead{font-size:18.5px;color:#2E3B32;max-width:640px}
 .container{max-width:1180px;margin:0 auto;padding:0 20px}
 .eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark);font-weight:700;margin-bottom:10px}
 .eyebrow.light{color:#F0C94A}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;border:2px solid transparent;cursor:pointer;text-decoration:none!important}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;line-height:1.25;border:2px solid transparent;cursor:pointer;text-decoration:none!important;flex-shrink:0;white-space:nowrap}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-items:center;margin-top:20px}
+.cta-row .btn{margin:0}
 .btn-gold{background:var(--gold);color:#1A231E}.btn-gold:hover{background:#E8B62A}
 .btn-green{background:var(--green);color:#fff}.btn-green:hover{background:#0F2A1A}
 .btn-outline{background:transparent;border-color:var(--green);color:var(--green)}.btn-outline:hover{background:var(--green);color:#fff}
@@ -48,3 +50,5 @@ footer{background:#0F2A1A;color:#DDE8DD;padding:44px 0 22px;margin-top:0}footer 
 .page-hero{background:var(--cream);padding:36px 0 28px;border-bottom:1px solid var(--line)}
 @media(max-width:900px){.hero-grid,.grid2,.grid3{grid-template-columns:1fr}.grid4{grid-template-columns:1fr}.timeline{grid-template-columns:1fr 1fr}nav.main{display:none}nav.main.open{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:#fff;padding:14px;border-bottom:1px solid var(--line)}nav.main.open a{width:100%}.hamburger{display:block}.header-inner{position:relative}.hero-img img{height:320px}.form-grid{grid-template-columns:1fr}footer .foot-grid{grid-template-columns:1fr}.logo-text b{font-size:16px}.logo-link img{height:48px}}
 @media(max-width:520px){.timeline{grid-template-columns:1fr}}
+
+@media(max-width:520px){.cta-row{flex-direction:column;align-items:stretch;gap:12px;margin-top:20px}.cta-row .btn{width:100%;padding:14px 18px;white-space:normal;text-align:center}.hero-cta{flex-direction:column;align-items:stretch;gap:10px}.hero-cta .btn{width:100%}}

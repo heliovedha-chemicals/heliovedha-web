@@ -15,7 +15,7 @@ function sendEnquiry(e){
   var d=new FormData(f);
   var get=k=> (d.get(k)||'').toString().trim();
   var subject='New Enquiry — '+(get('product')||'General')+' — '+(get('company')||get('name')||'');
-  var body='Hello Heliovedha Chemicals,\n\nI would like to enquire about:\n\nProduct Name: '+get('product')+'\nCategory: '+get('category')+'\nSpecification / Grade: '+get('spec')+'\nQuantity: '+get('quantity')+' '+get('unit')+'\nPackaging Required: '+get('packaging')+'\nDelivery Location / Warehouse City: '+get('delivery')+'\n\nYour Name: '+get('name')+'\nCompany: '+get('company')+'\nEmail: '+get('email')+'\nPhone: '+get('phone')+'\n\nMessage:\n'+get('message')+'\n\nSent from heliovedha.com';
+  var body='Hello Heliovedha Chemicals,\n\nI would like to enquire about:\n\nProduct Name: '+get('product')+'\nCAS No.: '+get('cas')+'\nCategory: '+get('category')+'\nSpecification / Grade: '+get('spec')+'\nQuantity: '+get('quantity')+' '+get('unit')+'\nPackaging Required: '+get('packaging')+'\nDelivery Location / Warehouse City: '+get('delivery')+'\n\nYour Name: '+get('name')+'\nCompany: '+get('company')+'\nEmail: '+get('email')+'\nPhone: '+get('phone')+'\n\nMessage:\n'+get('message')+'\n\nSent from heliovedha.com';
   var mailto='mailto:sales@heliovedha.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
   document.getElementById('formSuccess').style.display='block';
   window.location.href=mailto;
