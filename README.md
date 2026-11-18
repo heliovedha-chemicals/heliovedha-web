@@ -57,3 +57,11 @@ Open `index.html` in a browser, or run `npx serve .` / `python3 -m http.server 8
 - Products page renamed to Products & Strategic Outsourcing + 4 new cards: Product Sourcing, Outsourcing Solutions, Global Procurement, Supply Chain Support
 - Company mobile number removed from public site (header/footer/contact) per latest doc
 - Enquiry form now has CAS No. field (optional, included in email)
+
+
+## V3.3 — Menu label
+- Menu: 'Products & Sourcing' -> 'Products & Strategic Outsourcing' on all 6 pages (Home, About, Products, Process, Trading, Contact).
+- Why: products.html already has both sections — 'Our Sourcing Portfolio' (4 categories) + 'Strategic Outsourcing'. Menu now matches the page.
+- Still one page (products.html), not a separate page — Strategic Outsourcing is the second section on that page.
+- CSS: tighter nav padding at 901-1100px so longer label never overflows header; mobile menu wraps cleanly.
+- Still 17 files only, no _1/_2 duplicates. Still includes V3.1 mobile overlap fix (cta-row), GST 36AAICH1154P1Z8, CAS field, no mobile number.
